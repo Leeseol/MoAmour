@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<title>美沫艾莫尔-结算订单</title>
+		<link rel="stylesheet" type="text/css" href="css/default.css" />
+		<link rel="stylesheet" type="text/css" href="css/component.css" />
+		<link rel="stylesheet" href="bootstrap-3.3.4-dist/css/bootstrap.css" />
+		<link rel="stylesheet" href="bootstrap-3.3.4-dist/css/bootstrap.min.css" />
+		<link rel="stylesheet" type="text/css" href="css/order.css" />
+		<link rel="stylesheet" type="text/css" href="css/footer.css" />
+		<script type="text/javascript" src="js/jquery.min.js"></script>
+		<!--<script type="text/javascript" src="js/cbpHorizontalMenu.min.js"></script>-->
+		<script type="text/javascript">
+			$(function() {
+				$('.cbp-hrmenu li').hover(function() {
+					$('.cbp-hrsub', this).css('display', 'block');
+				}, function() {
+					$('.cbp-hrsub', this).css('display', 'none');
+				});
+			});
+		</script>
+
+	</head>
+
+	<body style="background: #FAFAFA;">
+		<div class="container-fluid" style="background: #FFFFFF;">
+			<div class="zhuangtai">
+				<div class="container font">
+					<span><a href="register.html">注册</a></span>
+					<span><a href="login.php">登录</a></span>
+				</div>
+			</div>
+			<div class="container">
+								<!--头部-->
+				<div class="header">
+					<div class="row">
+						<div class="col-xs-12 col-sm-12 col-lg-12">
+							<div class="row">
+								<div class="col-sm-3">
+									<a href="index.php"><img src="img/logo.png" /></a>
+								</div>
+								<div class="col-sm-8">
+									<img src="img/search_03.png" class="search-img" /><input type="text" placeholder="请输入搜索的商品" class="search" />
+								</div>
+								<div class="col-sm-1">
+									<div class="zhengpin">
+										<span>正品认证</span>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-xs-12 col-sm-12 col-lg-12">
+							<nav id="cbp-hrmenu" class="cbp-hrmenu">
+								<ul>
+									<li>
+										<a href="story.html">品牌故事</a><span class="activehr"></span>
+									</li>
+									<li>
+										<a href="#">产品类别</a><span class="activehr"></span>
+										<div class="cbp-hrsub">
+											<div class="cbp-hrsub-inner">
+												<div>
+													<h4>面部护理</h4>
+													<ul>
+														<li>
+															<a href="#">卸妆</a>
+														</li>
+														<li>
+															<a href="#">洁面</a>
+														</li>
+														<li>
+															<a href="#">爽肤水</a>
+														</li>
+														<li>
+															<a href="#">面霜</a>
+														</li>
+														<li>
+															<a href="mask.php">面膜</a>
+														</li>
+														<li>
+															<a href="#">精华</a>
+														</li>
+													</ul>
+
+												</div>
+												<div>
+													<h4>美体保养</h4>
+													<ul>
+														<li>
+															<a href="#">洗发护发</a>
+														</li>
+														<li>
+															<a href="#">美体精油</a>
+														</li>
+														<li>
+															<a href="#">身体滋养</a>
+														</li>
+													</ul>
+												</div>
+												<div>
+													<a href=" "><img src="img/shouye1.jpeg" style="width: 300px;height: 300; margin: 40px;" /></a >
+												</div>
+											</div>
+											<!-- /cbp-hrsub-inner -->
+										</div>
+										<!-- /cbp-hrsub -->
+									</li>
+									<li>
+										<a href="#">产品系列</a><span class="activehr"></span>
+										<div class="cbp-hrsub">
+											<div class="cbp-hrsub-inner">
+												<div>
+													<h4>系列甄选</h4>
+													<ul>
+														<li>
+															<a href="productxilie.php">亮肤润白</a>
+														</li>
+														<li>
+															<a href="#">祛痘净肤</a>
+														</li>
+														<li>
+															<a href="#">修护润养</a>
+														</li>
+														<li>
+															<a href="#">紧致提升</a>
+														</li>
+													</ul>
+												</div>
+												<div>
+													<a href=" "><img src="img/shouye4.png" style="width: 600px;height: 300px; margin: 40px;" /></a >
+												</div>
+											</div>
+											<!-- /cbp-hrsub-inner -->
+										</div>
+										<!-- /cbp-hrsub -->
+									</li>
+									<li>
+										<a href="#">产品榜单</a><span class="activehr"></span>
+										<div class="cbp-hrsub">
+											<div class="cbp-hrsub-inner">
+												<div>
+													<h4>爱你所爱</h4>
+													<ul>
+														<li>
+															<a href="bangdan.php">热销爆款</a>
+														</li>
+														<li>
+															<a href="#">超值套餐</a>
+														</li>
+													</ul>
+												</div>
+												<div>
+													<a href=" "><img src="img/shouye2.jpeg" style="width: 300px;height: 300; margin: 40px;"/></a >
+
+												</div>
+												<div>
+													<a href=" "><img src="img/shouye3.jpeg" style="width: 300px;height: 300; margin: 40px;" /></a >
+												</div>
+											</div>
+										</div>
+									</li>
+									<li>
+										<a href="#">社区活动</a>
+									</li>
+								</ul>
+							</nav>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--内容部分 中部-->
+		<div class="main">
+			<div class="container">
+				<div class="row">
+					<div class="col-xs-12 col-sm-12 col-lg-12 name">结算订单</div>
+					<div class="col-xs-12 col-sm-12 col-lg-12 xian">
+						<hr color="#999999" />
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-xs-12 col-sm-12 col-lg-12 order">
+						<img src="img/order.png" class="img-responsive">
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-xs-2 ">
+						<font style="font-size: 24px;color:#333333">收货人</font>
+					</div>
+					<div class="col-xs-9"></div>
+					<div class="col-xs-1 add">新的地址</div>
+				</div>
+				<div class="row">
+					<div class="col-xs-12 " style="margin-bottom: 1%;">
+						<font style="font-size: 24px;color:#333333">商品</font>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-xs-12 ">
+						<div class="table-responsive">
+							<table class="table table-striped table-condensed">
+								<tr height="30%" style="color:#666666;font-size: 12px;height: 50px;">
+									<td width="40%" align="center" style="line-height: 50px;">商品</td>
+									<td width="20%" align="center" style="line-height: 50px;">单价</td>
+									<td width="20%" align="center" style="line-height: 50px;">数量</td>
+									<td width="20%" align="center" style="line-height: 50px;">结算金额</td>
+								</tr>
+								<tr height="20%" style="color:#666666;font-size: 14px;height: 120px;">
+									<td width="40%">
+										<img src="img/penwu.png" style="width: 120px;height: 100px;float: left;"><br /><br />
+										<span>美沫艾莫尔正品白玫瑰纯露 补水改善肤色保湿 爽肤水精油润肤花水  125ml</span>
+									</td>
+									<td width="20%" align="center" style="line-height: 120px;">
+										<font style="color:#f23063;font-size: 16px;">￥79</font>
+									</td>
+									<td width="20%" align="center" style="line-height: 120px;">1</td>
+									<td width="20%" align="center" style="line-height: 120px;">
+										<font style="color:#f23063;font-size: 16px;">￥79</font>
+									</td>
+								</tr>
+								<tr height="20%">
+									<td width="40%" align="center"><br></td>
+									<td width="20%" align="center">
+										<br>
+									</td>
+									<td width="20%" align="center"><br></td>
+									<td width="20%" align="center"><br></td>
+								</tr>
+								<tr height="20%" style="color:#666666;font-size: 12px;height: 60px;">
+									<td width="40%" align="center"></td>
+									<td width="20%" align="center"></td>
+									<td width="20%" align="center"></td>
+									<td width="20%" align="center" style="line-height: 60px;">商品合计(加运费)
+										<font style="color:#f23063;font-size: 16px;">79</font>元</td>
+								</tr>
+								<tr height="20%">
+									<td width="40%" align="center"><br></td>
+									<td width="20%" align="center">
+										<br>
+									</td>
+									<td width="20%" align="center"><br></td>
+									<td width="20%" align="center"><br></td>
+								</tr>
+							</table>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-xs-12 col-sm-12 col-lg-12">
+						<div class="button"><a href="success.html">付款</a></div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--底部-->
+		<div class="footer">			
+			<div class="container">
+				<hr class="foot-hr" />
+				<div class="row" style="margin-top: 2%;">
+					<div class="col-xs-1 col-sm-1 col-md-1 col-sm-offset-1">
+						<img src="img/footlogo.png" />
+					</div>
+					<div class="col-xs-9 col-sm-9 col-md-9 footer-font">
+						<span>阿里巴巴集团  | 阿里巴巴国际站 | 阿里巴巴中国站 | 全球速卖通 | 淘宝网 | 天猫|聚划算 | 一淘 | 阿里妈妈|阿里云计算 | 云OS| 万网 | 中国雅虎 | </span>
+
+						<span>关于淘宝 合作伙伴 营销中心 联系客服 开放平台 诚征英才 联系我们 网站地图 法律声明 © 2015 Taobao.com 版权所有</span>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-xs-12 col-sm-12 col-md-12">
+				<div class="footer-new">
+					<center>
+						<span>© COPYRIGHT THEFACESHOP 美沫艾莫尔(北京)化妆品销售有限公司 | 隐私声明  沪ICP备12046938号-2</span>
+					</center>
+				</div>
+			</div>
+		</div>
+	</body>
+
+</html>

@@ -1,0 +1,105 @@
+*{
+	list-style: none;
+	margin: 0 auto;
+}
+a{
+	text-decoration: none;
+}
+a:hover{
+	text-decoration: none;
+}
+
+.zhuangtai{
+	width: 100%;
+	height: 30px;
+	background-color: #dee2e0;
+}
+.search{
+	width: 90%;
+	height: 40px;
+	border: 2px solid #999d97;
+	margin-top: 30px;
+	font-size: 12px;
+	color: #999d97;
+	float: right;
+}
+.search-img{
+margin-left:-10%;
+width: 25px;	
+float: right;
+margin-top: 35px;
+position: relative;
+z-index: 9999;
+}
+.zhengpin{
+	color: #999d97;
+	font-size: 14px;
+	line-height: 100px;
+	float: right;
+}
+.font span{
+		float: right;
+		line-height: 30px;
+		width: 40px;
+		text-align: right;
+}
+.font span a{
+	text-decoration: none;
+	font-size: 12px;
+	color: #999d97;
+}
+/*中部main*/
+.main{
+	background: #FAFAFA;
+}
+.name{
+	margin-top: 4%;
+	font-size: 36px;
+	font-family: '宋体';
+	text-align: center;
+	color: #474747;
+}
+.xian{
+	margin-top: 2%;
+}
+.order{
+	margin-top: 2%;
+	margin-bottom: 4%;
+	text-align: center;
+}
+.add{
+	height:34px;
+	background: #86ceb9;
+	color: #FAFAFA;
+	font-size: 12px;
+	line-height: 34px;
+	text-align: center;
+	margin-bottom: 2%;
+}
+.button{
+	width: 150px;
+	height: 40px;
+	background: #f23063;
+	font-size: 12px;
+	line-height: 40px;
+	text-align: center;
+}
+.button a{
+	color: #FAFAFA;
+}
+.footer{
+	margin-top: 8%;
+	background: #FAFAFA;
+}
+.activehr{
+	width: 100px;
+	height: 2px;
+	display: block;
+	background-color: white;
+}
+.cbp-hrmenu ul li:hover .activehr{
+	width: 100px;
+	height: 2px;
+	display: block;
+	background-color: black;
+}

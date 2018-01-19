@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<title>用户列表</title>
+		<link rel="stylesheet" type="text/css" href="../bootstrap-3.3.4-dist/css/bootstrap.min.css" />
+		<link rel="stylesheet" type="text/css" href="../bootstrap-3.3.4-dist/css/bootstrap-theme.min.css" />
+		<script src="js/jquery-1.11.0.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../bootstrap-3.3.4-dist/js/bootstrap.min.js"></script>
+
+		<script language="JavaScript">
+			$.getJSON("ctrl/users.php", function(data) {
+
+				var html = '';
+				for(var i = 0; i < data.length; i++) {
+					html += '<tr><td>' + data[i].user_id + "</td><td>" + data[i].user_name + "</td><td>" + data[i].user_pwd + "</td><td><a href=''>查看</a>&nbsp&nbsp<a href=''>修改</a>&nbsp&nbsp<a href='deleteuser.php?userid="+data[i].user_id+"'>删除</a></td></tr>";
+				}
+
+				$('#clum').html(html);
+			});
+		</script>
+		<style>
+			*{
+				margin: 0 auto;
+			}
+		</style>
+	</head>
+
+	<body>
+		<div style="width: 90%;">
+		<a href="insertuser.php">添加用户</a>
+			<table class="table table-hover" >
+			<thead>
+				<tr class="active">
+					<th>编号</th>
+					<th>用户名</th>					
+					<th>密码</th>					
+					<th>管理操作</th>
+				</tr>
+			</thead>
+			<tbody id="clum">
+			</tbody>
+		</table>
+		</div>
+	</body>
+
+</html>

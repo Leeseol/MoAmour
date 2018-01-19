@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<title>面膜</title>
+		<link rel="stylesheet" type="text/css" href="../bootstrap-3.3.4-dist/css/bootstrap.min.css" />
+		<link rel="stylesheet" type="text/css" href="../bootstrap-3.3.4-dist/css/bootstrap-theme.min.css" />
+		<script src="js/jquery-1.11.0.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../bootstrap-3.3.4-dist/js/bootstrap.min.js"></script>
+
+		<script language="JavaScript">
+		$.getJSON("ctrl/mask.php", function(data) {
+
+			var html = '';
+			for(var i = 0; i < data.length; i++) {
+				html += '<tr><td>' + data[i].mask_id + "</td><td>" + data[i].mask_name+ "</td><td><img src='" + data[i].mask_pic+"'  style='width:40px;height:40px'/></td><td>" + data[i].mask_price+ "</td><td><a href=''>查看</a>&nbsp&nbsp<a href='updatemask.php?maskid="+data[i].mask_id+"'>修改</a>&nbsp&nbsp<a href='ctrl/deletemask.php?maskid="+data[i].mask_id+"'>删除</a></td></tr>";
+			}
+
+			$('#clum').html(html);
+		});
+		</script>
+		<style>
+			*{
+				margin: 0 auto;
+			}
+		</style>
+	</head>
+
+	<body>
+		<div style="width: 90%;">
+		    <a href="insertmask.php">添加面膜</a>
+			<table class="table table-hover" >
+			<thead>
+				<tr class="active">
+					<th>产品编号</th>
+					<th>产品名称</th>					
+					<th>产品图片</th>
+					<th>产品价格</th>					
+					<th>管理操作</th>
+				</tr>
+			</thead>
+			<tbody id="clum">
+			</tbody>
+		</table>
+		</div>
+	</body>
+
+</html>

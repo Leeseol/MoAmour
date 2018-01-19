@@ -1,0 +1,48 @@
+.container-main{
+	width: 100%;
+	background-color:white;
+}
+.liangfu{
+	color: #333333;
+	font-size: 30px;
+	margin-top: 30px;
+	font-family: "瀹嬩綋";
+}
+.nav-pills li a{
+ font-family: '瀹嬩綋';
+}
+.nav-pills li a:hover{
+	background-color: #86ceb9;
+}
+.product-name{
+	color: #666666;
+	font-size: 12px;
+}
+.thumbnail{
+	border: 0px;
+	background-color: white;
+}
+.product-money{
+	color: #f23063;
+	font-size: 16px;
+}
+.buttons{
+	border: 2px solid #474747;
+	width: 70%;
+	height: 40px;
+	line-height: 28px;
+	color: #666666;
+	font-size: 14px;
+	border-radius:0px;
+	margin-top: 5%;
+}
+.buttons:hover{
+	border: 0px;
+	background-color: #86CEB9;
+	color: white;
+	border: 2px solid #86CEB9;
+}
+.product-detail{
+	margin-top: 2%;
+}
+

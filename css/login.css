@@ -1,0 +1,69 @@
+.login-span{
+	margin-top: 5%;
+	color: #474747;
+	font-size: 30px;
+}
+.login-div{
+	width: 100%;
+	height: 520px;
+	border: 10px solid #86CEB9;
+	background-color: #e8e8e8;
+}
+.login-kuang{
+	margin-top: 5%;
+}
+.login-img{
+	height: 80%;
+}
+.input-div{
+	width: 95%;
+	height: 80%;
+	margin-top: 2%;
+	background-color: white;
+}
+.input-div2{
+	width: 60%;
+	height: 15%;
+	padding-top: 5%;
+	
+}
+.input-div2 span{
+	color:#333333;
+	font-size: 16px;
+	padding-left: 2%;
+}
+.input-padding{
+	padding-top: 15%;
+}
+.input-padding2{
+	padding-top: 5%;
+}
+.input-label{
+	display: none;
+}
+.input-span span{
+	display: block;
+	padding-top: 3%;
+	color: #999999;
+	margin-left: 5%;
+}
+.input-span span:hover{
+	color: #f23063;
+}
+.input-control{
+	width: 90%;
+	height: 50px;
+	margin-left: 5%;
+	border: 2px solid #b7b6b6;
+	border-radius: 0px;
+}
+.input-button-login{
+	width: 90%;
+	height: 40px;
+	margin-left: 5%;
+	border: 0px;
+	color: white;
+	font-size: 16px;
+	background-color: #f23063;
+}
+

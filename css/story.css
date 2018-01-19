@@ -1,0 +1,26 @@
+.story{
+	color: #999999;
+}
+.one{
+	border: solid 1px #999999;
+	border-radius: 5px;
+}
+.two{
+	margin-top: 5px;
+}
+.three{margin:20px 20px 20px 45px;}
+.four{
+	padding: 50px 0 0 0;
+}
+.five{
+	padding: 30px 0 30px 0;
+}
+.six{
+	padding: 50px 0;
+}
+.dd span,.dd h4{
+	padding: 8px;
+}
+p{
+	margin:0 5px;
+}
